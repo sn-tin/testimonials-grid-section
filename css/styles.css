@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&display=swap');
+
+body {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed';
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+h3 span {
+    opacity: 50%;
+}
+
+P {
+    font-weight: 500;
+    opacity: 70%;
+}
+
+/* Container */
+
+.main {
+    padding: 20px;
+}
+
+
+/* Card */
+
+.card {
+    border-radius: 10px;
+    padding: 20px 35px;
+    margin: 30px 0;
+}
+
+.white-bg {
+    color: hsl(217, 19%, 35%);
+}
+
+.testimonial-1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-position: 85% 0;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.testimonial-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.testimonial-3 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.testimonial-4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.testimonial-5 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* Profile */
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    max-width: 50px;
+    border: 3px solid hsl(263, 55%, 65%);
+    border-radius: 50%;
+}
+
+
+@media (min-width: 1024px) {
+    .card {
+        margin: 0;
+    }
+    .main {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: 
+        "box1 box1 box2"
+        "box3 box4 box4"
+        "box5 box5 box5";
+        justify-content: center;
+        align-content: center;
+        padding: 100px;
+    }
+
+    .testimonial-1 {
+        grid-area: box1;
+        background-size: 23%;
+    }
+    
+    .testimonial-2 {
+        grid-area: box2;
+    }
+    
+    .testimonial-3 {
+        grid-area: box3;
+    }
+    
+    .testimonial-4 {
+        grid-area: box4;
+    }
+    
+    .testimonial-5 {
+        grid-area: box5;
+    }
+}
+
+@media (min-width: 1440px) {
+
+
+    h1 {
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+
+    p {
+        margin-top: 30px;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .main {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: 
+        "box1 box1 box2 box5"
+        "box3 box4 box4 box5";
+        justify-content: center;
+        align-content: center;
+        padding: 100px;
+    }
+
+    .testimonial-1 {
+        grid-area: box1;
+        background-size: 23%;
+    }
+    
+    .testimonial-2 {
+        grid-area: box2;
+    }
+    
+    .testimonial-3 {
+        grid-area: box3;
+    }
+    
+    .testimonial-4 {
+        grid-area: box4;
+    }
+    
+    .testimonial-5 {
+        grid-area: box5;
+    }
+}
