@@ -86,47 +86,7 @@ P {
 }
 
 
-@media (max-width: 1024px) {
-    .card {
-        margin: 0;
-    }
-    .main {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-        grid-template-areas: 
-        "box1 box1 box2"
-        "box3 box4 box4"
-        "box5 box5 box5";
-        justify-content: center;
-        align-content: center;
-        padding: 100px;
-    }
-
-    .testimonial-1 {
-        grid-area: box1;
-        background-size: 23%;
-    }
-    
-    .testimonial-2 {
-        grid-area: box2;
-    }
-    
-    .testimonial-3 {
-        grid-area: box3;
-    }
-    
-    .testimonial-4 {
-        grid-area: box4;
-    }
-    
-    .testimonial-5 {
-        grid-area: box5;
-    }
-}
-
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
 
 
     h1 {
