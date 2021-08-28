@@ -31,7 +31,7 @@ P {
 
 /* Container */
 
-.main {
+main {
     padding: 20px;
 }
 
@@ -85,48 +85,7 @@ P {
     border-radius: 50%;
 }
 
-
-@media (min-width: 1024px) {
-    .card {
-        margin: 0;
-    }
-    .main {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-        grid-template-areas: 
-        "box1 box1 box2"
-        "box3 box4 box4"
-        "box5 box5 box5";
-        justify-content: center;
-        align-content: center;
-        padding: 100px;
-    }
-
-    .testimonial-1 {
-        grid-area: box1;
-        background-size: 23%;
-    }
-    
-    .testimonial-2 {
-        grid-area: box2;
-    }
-    
-    .testimonial-3 {
-        grid-area: box3;
-    }
-    
-    .testimonial-4 {
-        grid-area: box4;
-    }
-    
-    .testimonial-5 {
-        grid-area: box5;
-    }
-}
-
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
 
 
     h1 {
@@ -134,25 +93,37 @@ P {
         margin: 10px 0;
     }
 
+    h3 {
+        font-size: 0.9rem;
+    }
+
     p {
-        margin-top: 30px;
+        font-size: 0.9rem;
+        margin-top: 20px;
     }
 
     .card {
+        padding: 10px 30px 20px;
         margin: 0;
     }
 
-    .main {
+    .profile img {
+        max-width: 30px;
+    }
+
+    main {
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
+        grid-gap: 35px;
         grid-template-areas: 
         "box1 box1 box2 box5"
         "box3 box4 box4 box5";
         justify-content: center;
         align-content: center;
-        padding: 100px;
+        /* padding: 100px; */
+        padding: 10% 8%;
+        margin: 0 auto;
     }
 
     .testimonial-1 {
